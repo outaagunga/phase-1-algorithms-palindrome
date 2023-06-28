@@ -23,3 +23,14 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+//My code to solve the Palindrome challenge
+function isPalindrome(word) {
+  const reverseWord = word.split("").reverse().join("");
+  if (word === reverseWord) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isPalindrome("kingdom"));
